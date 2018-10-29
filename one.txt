@@ -1,3 +1,6 @@
-this is test git, are you Ok?
-I want to know what happened?
-这太神奇了
+git init --- 创建一个仓库
+git add 文件名称  --- 将文件更新添加
+git commit -m "备注" --- 将文件提交，可以提交多个
+
+git status --- 获取本地文件状态
+git checkout -- 文件名 --- 在没有git add的情况前 可以回退到本地修改前的文件
