@@ -4,3 +4,9 @@ git commit -m "备注" --- 将文件提交，可以提交多个
 
 git status --- 获取本地文件状态
 git checkout -- 文件名 --- 在没有git add的情况前 可以回退到本地修改前的文件
+
+时光穿梭机
+git log --- 获取文件修改的版本时间
+git log --pretty=online --- 更好看一些
+git reflog --- 获取到已经回退过的版本
+git reset --hard 版本号
