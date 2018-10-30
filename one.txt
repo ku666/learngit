@@ -3,10 +3,23 @@ git add 文件名称  --- 将文件更新添加
 git commit -m "备注" --- 将文件提交，可以提交多个
 
 git status --- 获取本地文件状态
-git checkout -- 文件名 --- 在没有git add的情况前 可以回退到本地修改前的文件
+git checkout -- 文件名 --- 在没有git add的情况前 可以回退到本地修改前的文件，从本地仓库恢复到工作区
 
 时光穿梭机
 git log --- 获取文件修改的版本时间
 git log --pretty=online --- 更好看一些
 git reflog --- 获取到已经回退过的版本
 git reset --hard 版本号
+
+git reset HEAD 文件名 --- 将暂存区的回退到工作区
+
+删除
+del three.txt  --- 删除本地工作区的文件
+git checkout -- three.txt --- 还是可以从本地仓库中获取到的
+
+del three.txt
+git rm three.txt  --- 删除掉本地仓库的文件，不可以恢复了，已经删除掉了
+git commit -m "删除three文件"
+
+工作区 --- 暂存区 --- 本地仓库 --- 远程仓库
+新建    --- git add --- git commit --- git pull/git push 
