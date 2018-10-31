@@ -37,3 +37,8 @@ $ git push origin master --- 只要本地作了提交，就可以推送给远程仓库
 git checkout -b dev  ---  创建一个新的dev分支并且把当前的head指针指向了dev,下次使用提交都会提交到dev分支上
 git add 
 git commit -m 文件名
+
+
+git checkout master --- 先移动到主分支上  再将主分支和dev分支合并
+git merge dev --- 将主分支的指针指到dev上，合并代码，Fast-forward是快速合并
+
