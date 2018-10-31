@@ -26,6 +26,7 @@ git commit -m "删除three文件"
 
 
 git remote add origin git@github.com:michaelliao/learngit.git ---- 链接上远程仓库
+git remote add origin  https://github.com/ku666/learngit
 git push -u origin master --- 将本地的推送到远程仓库
 
 我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
@@ -41,4 +42,7 @@ git commit -m 文件名
 
 git checkout master --- 先移动到主分支上  再将主分支和dev分支合并
 git merge dev --- 将主分支的指针指到dev上，合并代码，Fast-forward是快速合并
+
+删除分支
+git branch -d dev --- 删除分支
 
