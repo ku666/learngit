@@ -92,5 +92,11 @@ git stash pop --- 恢复隐匿的代码，并删除stash中的列表数据
 git stash apply --- 恢复隐匿的代码但是并没有删除stash工作区的数据列表
 git stash drap --- 删除stash工作区的数据列表
 
+feature新功能做好不要了 要清楚
+git branch -d feature --- 执行报错没有合并
+		error: The branch 'feature' is not fully merged.
+		If you are sure you want to delete it, run 'git branch -D feature'.
+git branch -D feature --- 使用大D删除分支，因为小d需要合并代码才可以
+
 
 
