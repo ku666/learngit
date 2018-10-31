@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gitlearn总结</title>
+</head>
+<body>
+<p>git init --- 创建一个仓库</p>
+<p>git add 文件名称  --- 将文件更新添加</p>
+<p>git commit -m "备注" --- 将文件提交，可以提交多个</p>
+
+<p>git status --- 获取本地文件状态</p>
+<p>git checkout -- 文件名 --- 在没有git add的情况前 可以回退到本地修改前的文件，从本地仓库恢复到工作区</p>
+
+<h2>时光穿梭机</h2>
+<p>git log --- 获取文件修改的版本时间</p>
+<p>git log --pretty=online --- 更好看一些</p>
+<p>git reflog --- 获取到已经回退过的版本</p>
+<p>git reset --hard 版本号</p>
+
+<p>git reset HEAD 文件名 --- 将暂存区的回退到工作区</p>
+
+<h2>删除</h2>
+<p>del three.txt  --- 删除本地工作区的文件</p>
+<p>git checkout -- three.txt --- 还是可以从本地仓库中获取到的</p>
+
+<p>del three.txt</p>
+<p>git rm three.txt  --- 删除掉本地仓库的文件，不可以恢复了，已经删除掉了</p>
+<p>git commit -m "删除three文件"</p>
+
+<p>工作区 --- 暂存区 --- 本地仓库 --- 远程仓库</p>
+<p>新建    --- git add --- git commit --- git pull/git push </p>
+
+
+<p>git remote add origin git@github.com:michaelliao/learngit.git ---- 链接上远程仓库</p>
+<p>git push -u origin master --- 将本地的推送到远程仓库</p>
+
+<p>我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，</p>
+<p>还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
+
+<p>$ git push origin master --- 只要本地作了提交，就可以推送给远程仓库</p>
+
+<h2>创建新的分支</h2>
+
+<p>git checkout -b dev  ---  创建一个新的dev分支并且把当前的head指针指向了dev,下次使用提交都会提交到dev分支上</p>
+<p>git add </p>
+<p>git commit -m 文件名</p>
+
+
+<p>git checkout master --- 先移动到主分支上  再将主分支和dev分支合并</p>
+<p>git merge dev --- 将主分支的指针指到dev上，合并代码，Fast-forward是快速合并</p>
+
+<h2>删除分支</h2>
+<p>git branch -d dev --- 删除分支</p>
+
+
+</body>
+</html>
