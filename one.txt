@@ -46,3 +46,21 @@ git merge dev --- 将主分支的指针指到dev上，合并代码，Fast-forward是快速合并
 删除分支
 git branch -d dev --- 删除分支
 
+
+To https://github.com/ku666/learngit.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ku666/learngit.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+上传远程仓库
+git pull origin master
+git push origin master
+
+原因： 是再远程仓库修改后要拉取一下
+
+
+冲突 -- 如何解决冲突
+
