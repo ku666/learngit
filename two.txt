@@ -1,3 +1,5 @@
 this is two tes
 会冲突欧
 冲突问题
+
+测试 合并--no-ff 不适用fast-forward
